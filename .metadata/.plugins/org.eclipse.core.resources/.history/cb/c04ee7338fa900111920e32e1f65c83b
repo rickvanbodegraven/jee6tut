@@ -1,0 +1,5 @@
+package converter.ejb;
+
+public class ConverterBean {
+
+}

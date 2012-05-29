@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+C:\Dropbox\School (mijn map)\Jaar 3\Blok 4\Java EE\java-ejb-6-tut\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+181519281.index
+3440505007.index
+2397842050.index
+1819703088.index
+631195920.index

@@ -13,11 +13,24 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.math.BigDecimal;
 
+import javax.ejb.EJB;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import converter.ejb.ConverterBean;
 
 
-@WebServlet
+@WebServlet("/ConverterServlet")
 public class ConverterServlet extends HttpServlet {
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+    
+    
     @EJB
     ConverterBean converter;
 
@@ -66,7 +79,7 @@ public class ConverterServlet extends HttpServlet {
                         "<p>" + yenAmount.toPlainString() + " yen are "
                         + euroAmount.toPlainString() + " Euro.</p>");
             } else {
-                out.println("<p>Enter a dollar amount to convert:</p>");
+                out.println("<h2>Enter a dorrar amount to convert:</h2>");
                 out.println("<form method=\"get\">");
                 out.println(
                         "<p>$ <input type=\"text\" name=\"amount\" size=\"25\"></p>");
